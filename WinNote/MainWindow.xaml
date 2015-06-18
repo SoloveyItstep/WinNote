@@ -1,0 +1,249 @@
+﻿<Window xmlns:ListProductInfo="clr-namespace:ListProductInfo;assembly=ListProductInfo"  xmlns:EntryListControl="clr-namespace:EntryListControl;assembly=EntryListControl"  xmlns:ListCategories="clr-namespace:ListCategories;assembly=ListCategories"  xmlns:WalletTopMenuUserControll="clr-namespace:WalletTopMenuUserControll;assembly=WalletTopMenuUserControll"  x:Class="WinNote.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:CalendarAddMenu_UserControl="clr-namespace:CalendarAddMenu_UserControl;assembly=CalendarAddMenu_UserControl"
+        xmlns:CalendarLibrary="clr-namespace:CalendarLibrary;assembly=CalendarLibrary"
+        xmlns:Calendar_topMenu_UserControl="clr-namespace:Calendar_topMenu_UserControl;assembly=Calendar_topMenu_UserControl"
+        xmlns:Day_UserControl="clr-namespace:Day_UserControl;assembly=Day_UserControl"
+        xmlns:LoginUserControl="clr-namespace:LoginUserControl;assembly=LoginUserControl"
+        xmlns:MonthUserControl="clr-namespace:MonthUserControl;assembly=MonthUserControl"
+        xmlns:NotePad_UserControl="clr-namespace:NotePad_UserControl;assembly=NotePad_UserControl"
+        xmlns:Notepad_topMenu_UserControl="clr-namespace:Notepad_topMenu_UserControl;assembly=Notepad_topMenu_UserControl"
+        xmlns:RegisterUserControl="clr-namespace:RegisterUserControl;assembly=RegisterUserControl"
+        xmlns:Timetable_UserControl="clr-namespace:Timetable_UserControl;assembly=Timetable_UserControl"
+        xmlns:WeekUserControl="clr-namespace:WeekUserControl;assembly=WeekUserControl"
+        xmlns:WinNote_LeftMenu="clr-namespace:WinNote_LeftMenu;assembly=WinNote_LeftMenu"
+        Title="Win Note"
+        Width="1000"
+        Height="600"
+        Loaded="Window_Loaded"
+        MouseDown="Window_MouseDown"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="View/Xamls/Login_Register.xaml" />
+                <ResourceDictionary Source="View/Xamls/MainPageDictionary.xaml" />
+                <ResourceDictionary Source="View/Xamls/ScrollViewerDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Button Name="button_close" Style="{StaticResource topButtonsStyle}">
+            <Image Source="pack://application:,,,/Images/close.png" />
+        </Button>
+        <Button Name="button_size"
+                Style="{StaticResource topButtonsStyle}"
+                Visibility="Hidden">
+            <Image Source="pack://application:,,,/Images/size.png" />
+        </Button>
+        <Button Name="button_minimize"
+                Margin="8,0,-8,0"
+                RenderTransformOrigin="0.82,0.427"
+                Style="{StaticResource topButtonsStyle}">
+            <Image Margin="0,15,0,0" Source="pack://application:,,,/Images/minimize.png" />
+        </Button>
+        <Grid Name="Grid_firstPage" Visibility="Hidden">
+            <Grid Name="Grid_LoginMenu"
+                  Width="400"
+                  Height="600">
+                <Image Width="100"
+                       Height="100"
+                       Margin="0,100,0,0"
+                       VerticalAlignment="Top"
+                       Source="pack://application:,,,/Images/logo_big.png" />
+                <LoginUserControl:LoginControl Margin="0,0,0,0" />
+                <Label Name="Label_loginMenu"
+                       Height="30"
+                       Margin="0,300,0,0"
+                       VerticalAlignment="Center"
+                       HorizontalContentAlignment="Center"
+                       Foreground="red" />
+                <Button Name="Button_GoToRegisterMenu"
+                        Height="30"
+                        VerticalAlignment="Bottom"
+                        Background="#e3f2fd"
+                        BorderThickness="0"
+                        Content="Регистрация"
+                        FontSize="15"
+                        Foreground="#2196f3" />
+            </Grid>
+            <Grid Name="Grid_RegisterMenu"
+                  Width="400"
+                  Margin="400,0,-400,0"
+                  Visibility="Visible">
+                <Image Width="100"
+                       Height="100"
+                       Margin="0,75,0,0"
+                       VerticalAlignment="Top"
+                       Source="pack://application:,,,/Images/logo_big.png" />
+                <RegisterUserControl:RegisterControl Margin="0,200,0,0" />
+                <Label Name="Label_RegisterMenu"
+                       Width="400"
+                       Height="30"
+                       Margin="0,0,0,50"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom"
+                       HorizontalContentAlignment="Center"
+                       FontSize="12"
+                       Foreground="red" />
+                <Button Name="Button_GoToLoginMenu"
+                        Height="30"
+                        VerticalAlignment="Bottom"
+                        Background="White"
+                        BorderThickness="0"
+                        Content="Вернуться назад"
+                        FontSize="15"
+                        Foreground="#2196f3" />
+            </Grid>
+        </Grid>
+        <Grid Name="Grid_MainPage"
+              Panel.ZIndex="0"
+              Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Name="Grid_forOpacity"
+                  Grid.RowSpan="2"
+                  Grid.ColumnSpan="2"
+                  Panel.ZIndex="1"
+                  Background="White"
+                  Opacity="0.3"
+                  Visibility="Hidden" />
+            <Grid Name="Grid_TopPanel"
+                  Grid.Row="0"
+                  Grid.ColumnSpan="2"
+                  Background="#FFADD8E6"
+                  MouseLeftButtonDown="Grid_TopPanel_MouseLeftButtonDown">
+                <Image Margin="20,0,0,0"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Source="pack://application:,,,/Images/logo.png" />
+                <Label HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Content="WinNote"
+                       FontSize="25"
+                       Foreground="White"
+                       TextBlock.FontWeight="Bold" />
+            </Grid>
+            <Grid Name="Grid_LeftMenu" Grid.Row="1">
+                <WinNote_LeftMenu:LeftMenu Name="leftMenuUserControl" VerticalAlignment="Top" />
+
+            </Grid>
+            <Grid Name="Grid_RightMenu"
+                  Grid.Row="1"
+                  Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="#e3f2fd">
+                    <Grid Height="4"
+                          VerticalAlignment="Top"
+                          Background="#80cbc4" />
+                    <Grid Name="Grid_TopMenu" Margin="0,0,200,0">
+                        <Calendar_topMenu_UserControl:Calendar_topMenu_UserControl Name="UserControl_Top_calendar" Visibility="Visible" />
+                        <Notepad_topMenu_UserControl:Notepad_topMenu Name="UserControl_Top_notepad" Visibility="Hidden" />
+                        <WalletTopMenuUserControll:UserControl1 x:Name="UserControl_Top_wallet" Visibility="Hidden"/>
+                    </Grid>
+                    <Grid Width="200" HorizontalAlignment="Right">
+                        <Label Name="Label_UserName"
+                               Margin="0,3,110,0"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               FontSize="13"
+                               Foreground="#03a9f4" />
+                        <Image Width="32"
+                               Height="32"
+                               Margin="105,3,65,0"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               Source="pack://application:,,,/Images/profile-male_blue.png" />
+                        <Label Margin="0,3,15,0"
+                               HorizontalAlignment="Right"
+                               VerticalAlignment="Center"
+                               FontSize="13"
+                               FontWeight="Bold"
+                               Foreground="#03a9f4">
+                            <Hyperlink Name="Hyperlink_LogOutUser">Выйти</Hyperlink>
+                        </Label>
+                    </Grid>
+                </Grid>
+                <Grid Name="Grid_Calendar_RightMenu"
+                      Grid.Row="1"
+                      Panel.ZIndex="0">
+                    <Grid Name="week"
+                          Margin="0,0,0,0"
+                          Visibility="Visible">
+                        <ScrollViewer Name="scrollViewer_weekControl"
+                                      HorizontalScrollBarVisibility="Auto"
+                                      VerticalScrollBarVisibility="Auto">
+                            <WeekUserControl:WeekControl Name="weekUserControl" />
+                        </ScrollViewer>
+
+                    </Grid>
+                    <Grid Name="day"
+                          Margin="0,0,0,0"
+                          Visibility="Hidden">
+                        <ScrollViewer Name="ScrollViewer_Day" VerticalScrollBarVisibility="Auto">
+                            <Day_UserControl:DayUserControl Name="day_UserControl" />
+                        </ScrollViewer>
+                    </Grid>
+                    <Grid Name="month" Visibility="Hidden">
+                        <ScrollViewer Name="scrollViewer_monthControl"
+                                      HorizontalScrollBarVisibility="Auto"
+                                      VerticalScrollBarVisibility="Auto">
+                            <MonthUserControl:MonthControl Name="MonthControl" />
+                        </ScrollViewer>
+                    </Grid>
+                    <Grid Name="timetable"
+                          Margin="0,0,0,0"
+                          Visibility="Hidden">
+                        <ScrollViewer Name="scrollViewer_timetableControl"
+                                      HorizontalScrollBarVisibility="Auto"
+                                      VerticalScrollBarVisibility="Auto">
+                            <Timetable_UserControl:Timetable_UserControl Name="TimetableControl" />
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+
+                <Grid Name="Grid_Notepad_RightMenu"
+                      Grid.Row="1"
+                      Visibility="Hidden">
+                    <ScrollViewer Name="scrollViewer_NotepadControl" VerticalScrollBarVisibility="Auto">
+                        <NotePad_UserControl:NotePad_Control Name="NotepadControl" />
+                    </ScrollViewer>
+                </Grid>
+                <Grid Name="Grid_Wallet_RightMenu"
+                      Grid.Row="1"
+                      Visibility="Hidden">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="0"/>
+                        <ColumnDefinition Width="360"/>
+                    </Grid.ColumnDefinitions>
+                    <ListCategories:ListCategories Grid.Column="0"  x:Name="UserControl1"/>
+                    <EntryListControl:EntryList Grid.Column="1" x:Name="UserControl123" Opacity="0"/>
+                    <ListProductInfo:ProductInfo Grid.Column="2" x:Name="UserControl12" VerticalAlignment="Top" HorizontalAlignment="Right" MinWidth="360"/>
+                </Grid>
+            </Grid>
+            <CalendarAddMenu_UserControl:CalendarAddMenu_UserControl Name="calendarMenu"
+                                                                     Grid.Row="1"
+                                                                     Grid.Column="1"
+                                                                     Width="400"
+                                                                     Height="550"
+                                                                     Margin="0,0,-400,0"
+                                                                     HorizontalAlignment="Right"
+                                                                     VerticalAlignment="Top"
+                                                                     Panel.ZIndex="1"
+                                                                     Visibility="Hidden" />
+        </Grid>
+    </Grid>
+</Window>

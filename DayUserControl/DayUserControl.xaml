@@ -1,0 +1,1099 @@
+﻿<UserControl x:Class="DayUserControl.DayControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    <Grid Name="Grid_Day">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Name="r00" Height="50" />
+            <RowDefinition Name="r01" Height="50" />
+            <RowDefinition Name="r02" Height="50" />
+            <RowDefinition Name="r03" Height="50" />
+            <RowDefinition Name="r04" Height="50" />
+            <RowDefinition Name="r05" Height="50" />
+            <RowDefinition Name="r06" Height="50" />
+            <RowDefinition Name="r07" Height="50" />
+            <RowDefinition Name="r08" Height="50" />
+            <RowDefinition Name="r09" Height="50" />
+            <RowDefinition Name="r10" Height="50" />
+            <RowDefinition Name="r11" Height="50" />
+            <RowDefinition Name="r12" Height="50" />
+            <RowDefinition Name="r13" Height="50" />
+            <RowDefinition Name="r14" Height="50" />
+            <RowDefinition Name="r15" Height="50" />
+            <RowDefinition Name="r16" Height="50" />
+            <RowDefinition Name="r17" Height="50" />
+            <RowDefinition Name="r18" Height="50" />
+            <RowDefinition Name="r19" Height="50" />
+            <RowDefinition Name="r20" Height="50" />
+            <RowDefinition Name="r21" Height="50" />
+            <RowDefinition Name="r22" Height="50" />
+            <RowDefinition Name="r23" Height="50" />
+        </Grid.RowDefinitions>
+        <Grid Name="c0r00"
+              Grid.Row="0"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="0:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#DDD" />
+        </Grid>
+        <Grid Name="c1r00"
+              Grid.Row="0"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r000">
+                    <Label Name="l000"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h000" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r001">
+                    <Label Name="l001"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h001" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r01"
+              Grid.Row="1"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="1:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#DDD" />
+        </Grid>
+        <Grid Name="c1r01"
+              Grid.Row="1"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r010">
+                    <Label Name="l010"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h010" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r011">
+                    <Label Name="l011"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h011" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r02"
+              Grid.Row="2"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="2:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#DDD" />
+        </Grid>
+        <Grid Name="c1r02"
+              Grid.Row="2"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r020">
+                    <Label Name="l020"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h020" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r021">
+                    <Label Name="l021"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h021" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r03"
+              Grid.Row="3"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="3:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r03"
+              Grid.Row="3"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r030">
+                    <Label Name="l030"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h030" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r031">
+                    <Label Name="l031"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h031" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r04"
+              Grid.Row="4"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="4:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r04"
+              Grid.Row="4"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r040">
+                    <Label Name="l040"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h040" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r041">
+                    <Label Name="l041"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h041" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r05"
+              Grid.Row="5"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="5:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r05"
+              Grid.Row="5"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r050">
+                    <Label Name="l050"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h050" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r051">
+                    <Label Name="l051"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h051" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r06"
+              Grid.Row="6"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="6:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r06"
+              Grid.Row="6"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r060">
+                    <Label Name="l060"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h060" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r061">
+                    <Label Name="l061"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h061" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r07"
+              Grid.Row="7"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="7:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r07"
+              Grid.Row="7"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r070">
+                    <Label Name="l070"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h070" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r071">
+                    <Label Name="l071"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h071" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r08"
+              Grid.Row="8"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="8:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r08"
+              Grid.Row="8"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r080">
+                    <Label Name="l080"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h080" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r081">
+                    <Label Name="l081"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h081" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r09"
+              Grid.Row="9"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="9:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r09"
+              Grid.Row="9"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r090">
+                    <Label Name="l090"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h090" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r091">
+                    <Label Name="l091"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h091" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r10"
+              Grid.Row="10"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="10:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r10"
+              Grid.Row="10"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r100">
+                    <Label Name="l100"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h100" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r101">
+                    <Label Name="l101"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h101" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r11"
+              Grid.Row="11"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="11:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r11"
+              Grid.Row="11"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r110">
+                    <Label Name="l110"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h110" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r111">
+                    <Label Name="l111"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h111" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r12"
+              Grid.Row="12"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="12:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r12"
+              Grid.Row="12"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r120">
+                    <Label Name="l120"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h120" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r121">
+                    <Label Name="l121"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="13">
+                        <Hyperlink Name="h121" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r13"
+              Grid.Row="13"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="13:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r13"
+              Grid.Row="13"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r130">
+                    <Label Name="l130"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="13">
+                        <Hyperlink Name="h130" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r131">
+                    <Label Name="l131"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="13">
+                        <Hyperlink Name="h131" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r14"
+              Grid.Row="14"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="14:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r14"
+              Grid.Row="14"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r140">
+                    <Label Name="l140"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="13">
+                        <Hyperlink Name="h140" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r141">
+                    <Label Name="l141"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="13">
+                        <Hyperlink Name="h141" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r15"
+              Grid.Row="15"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="15:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r15"
+              Grid.Row="15"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r150">
+                    <Label Name="l150"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h150" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r151">
+                    <Label Name="l151"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h151" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r16"
+              Grid.Row="16"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="16:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r16"
+              Grid.Row="16"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r160">
+                    <Label Name="l160"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h160" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r161">
+                    <Label Name="l161"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h161" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r17"
+              Grid.Row="17"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="17:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r17"
+              Grid.Row="17"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r170">
+                    <Label Name="l170"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h170" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r171">
+                    <Label Name="l171"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h171" />
+                    </Label>
+                    <Rectangle Stroke="#DDD"></Rectangle>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r18"
+              Grid.Row="18"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="18:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r18"
+              Grid.Row="18"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r180">
+                    <Label Name="l180"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h180" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r181">
+                    <Label Name="l181"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h181" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r19"
+              Grid.Row="19"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="19:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r19"
+              Grid.Row="19"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r190">
+                    <Label Name="l190"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h190" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r191">
+                    <Label Name="l191"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h191" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r20"
+              Grid.Row="20"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="20:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r20"
+              Grid.Row="20"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r200">
+                    <Label Name="l200"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h200" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r201">
+                    <Label Name="l201"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h201" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r21"
+              Grid.Row="21"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="21:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r21"
+              Grid.Row="21"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r210">
+                    <Label Name="l210"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h210" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r211">
+                    <Label Name="l211"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h211" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r22"
+              Grid.Row="22"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="22:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+        <Grid Name="c1r22"
+              Grid.Row="22"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r220">
+                    <Label Name="l220"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h220" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r221">
+                    <Label Name="l221"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h221" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Name="c0r23"
+              Grid.Row="23"
+              Grid.Column="0"
+              ShowGridLines="True">
+            <Label HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Content="23:00"
+                   FontSize="13"
+                   Foreground="Gray" />
+            <Rectangle Stroke="#eee" />
+        </Grid>
+
+
+        <Grid Name="c1r23"
+              Grid.Row="23"
+              Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Rectangle Grid.RowSpan="2" Stroke="#eee" />
+            <Border Grid.Row="0"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r230">
+                    <Label Name="l230"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h230" />
+                    </Label>
+                </Grid>
+            </Border>
+            <Border Grid.Row="1"
+                    BorderBrush="#DDD"
+                    BorderThickness="1">
+                <Grid Name="r231">
+                    <Label Name="l231"
+                           MaxWidth="250"
+                           HorizontalAlignment="Center"
+                           FontSize="11">
+                        <Hyperlink Name="h231" />
+                    </Label>
+                </Grid>
+            </Border>
+        </Grid>
+
+    </Grid>
+</UserControl>

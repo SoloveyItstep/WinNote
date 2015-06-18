@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB067F00-7A40-464F-800B-1C535C239C65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinNote</RootNamespace>
+    <AssemblyName>WinNote</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\Users\Владимир\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Win Note</ProductName>
+    <PublisherName>WinNote</PublisherName>
+    <SuiteName>Win Note</SuiteName>
+    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4D4AE7EAFC9B55CA845A5A452E973DC88D442575</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WinNote_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>logoWinNote.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Delay.Web.Helpers, Version=1.1.0.0, Culture=neutral, PublicKeyToken=d4b08161ee9107c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Delay.Web.Helpers.1.1.1\lib\Delay.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DesignFactory.WebMatrix.ExecuterFactory, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebMatrix.Executer.1.5.0.0\lib\DesignFactory.WebMatrix.ExecuterFactory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DesignFactory.WebMatrix.IExecuter, Version=1.5.0.0, Culture=neutral, PublicKeyToken=dd928a8a9cd7e66a, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebMatrix.Executer.1.5.0.0\lib\DesignFactory.WebMatrix.IExecuter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\dll_Lib\bin\Release\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\dll_Lib\bin\Release\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebHelpers.3.2.3\lib\net45\Microsoft.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\dll_Lib\bin\Release\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\dll_Lib\bin\Release\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\dll_Lib\bin\Release\MySql.Fabric.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Web.6.9.6\lib\net45\MySql.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NoteLibrary">
+      <HintPath>..\dll_Lib\bin\Release\NoteLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="OmidID.Web.Security.EFMembershipProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EFMembership-WebMatrix.3.1\lib\net451\OmidID.Web.Security.EFMembershipProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Control\Control.cs" />
+    <Compile Include="Control\Events\MainMenuEvents.cs" />
+    <Compile Include="Control\Events\NotifyIcons.cs" />
+    <Compile Include="Control\SelectData\SelectDataToControls.cs" />
+    <Compile Include="Model\Entity\Calendar\CalendarDeserialisation.cs" />
+    <Compile Include="Model\Entity\Calendar\CalendarEventsFromControls.cs" />
+    <Compile Include="Model\Entity\Calendar\CalendarSerializetionClasses.cs" />
+    <Compile Include="Model\Entity\Calendar\ChangeEvent.cs" />
+    <Compile Include="Model\Entity\Calendar\CheckEventsClass.cs" />
+    <Compile Include="Model\Entity\CheckNewNotes\CheckNewNotes.cs" />
+    <Compile Include="Model\Entity\DataBase\Calendar.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\CalendarEventsToLoadOnServer.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\CalendarSharedEventAction.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\NotepadCategories.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\NotepadCategoryChanged.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\NotepadTextDocuments.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\NotepadTextDocumentsChanged.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\Users.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\Calendar\DeleteEvent.cs" />
+    <Compile Include="Model\Entity\DataBase\LogedInUser.cs">
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\WinModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\WinModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\DataBase\WinModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entity\EntityData.cs" />
+    <Compile Include="Model\Entity\Notepad\CreateNotepadStandartNotes.cs" />
+    <Compile Include="Model\Entity\Calendar\SaveCalendarEventToAction_Delete_Add_Change.cs" />
+    <Compile Include="Model\Entity\Notepad\SendNotepadData.cs" />
+    <Compile Include="Model\Entity\Notepad\NotepadDataClasses.cs" />
+    <Compile Include="Model\Entity\Notepad\TextDocuments.cs" />
+    <Compile Include="Model\SQL\NotepadSQLData.cs" />
+    <Compile Include="Model\SQL\SendUnfinishedActions.cs" />
+    <Compile Include="Model\SQL\WorkWithSQLData.cs" />
+    <Compile Include="Control\Events\LoginRegisterEvents.cs" />
+    <Compile Include="Model\Variables.cs" />
+    <Compile Include="Media\Sounds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sounds.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.cs" />
+    <Compile Include="View\View.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Images\Images.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\Xamls\Login_Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Xamls\MainPageDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Xamls\ScrollViewerDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Images\Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media\Sounds.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sounds.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\Entity\DataBase\WinModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WinModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\Entity\DataBase\WinModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WinModel.edmx</DependentUpon>
+      <LastGenOutput>WinModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model\Entity\DataBase\WinModel.edmx.diagram">
+      <DependentUpon>WinModel.edmx</DependentUpon>
+    </None>
+    <None Include="Model\Entity\DataBase\WinModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WinModel.edmx</DependentUpon>
+      <LastGenOutput>WinModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="WinNote_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\profile-male_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalendarAddMenu_UserControl\CalendarAddMenu_UserControl.csproj">
+      <Project>{5A7C69FE-D5CA-4FB2-937E-02A0A39E74AE}</Project>
+      <Name>CalendarAddMenu_UserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalendarLibrary\CalendarLibrary.csproj">
+      <Project>{658A29CA-B638-4375-B76D-CB89FFD5A6CE}</Project>
+      <Name>CalendarLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calendar_topMenu_UserControl\Calendar_topMenu_UserControl.csproj">
+      <Project>{98F9EE61-A4F1-40BE-8491-9AAD3A164134}</Project>
+      <Name>Calendar_topMenu_UserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConnectionToServer\ConnectionToServer.csproj">
+      <Project>{2f6d5422-4c31-47de-9fb4-f1fd8158c4e0}</Project>
+      <Name>ConnectionToServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Day_UserControl\Day_UserControl.csproj">
+      <Project>{BF88BCFF-6542-4FE3-BB9E-8FE105E6EB82}</Project>
+      <Name>Day_UserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntryListControl\EntryListControl%28M%29.csproj">
+      <Project>{15F26EB0-BFBE-4127-A5EE-D21567B09D41}</Project>
+      <Name>EntryListControl%28M%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventLibrsries\EventLibraries.csproj">
+      <Project>{6b08dac9-f81e-4cff-ab86-bf0042dca24c}</Project>
+      <Name>EventLibraries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDataBase\IDataBase.csproj">
+      <Project>{08afd099-91dd-4a1e-bd6b-3366aa2e5096}</Project>
+      <Name>IDataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IInterfaces\IInterfaces.csproj">
+      <Project>{2494f503-826c-40c0-98e3-fc2cf947dcc7}</Project>
+      <Name>IInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListCategories\ListCategories%28M%29.csproj">
+      <Project>{B1E2051F-FC74-41CD-BC55-225DF8565E8D}</Project>
+      <Name>ListCategories%28M%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListProductInfo\ListProductInfo%28M%29.csproj">
+      <Project>{33FBC376-EC34-4A75-A36B-2A63A862E7F7}</Project>
+      <Name>ListProductInfo%28M%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LoginUserControl\LoginUserControl.csproj">
+      <Project>{5411DCD5-7E89-4E3F-85DE-A967B0C2DE0C}</Project>
+      <Name>LoginUserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MainLogic\MainLogic%28M%29.csproj">
+      <Project>{470A1638-8462-4A9C-9B16-3329F712927C}</Project>
+      <Name>MainLogic%28M%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonthUserControl\MonthUserControl.csproj">
+      <Project>{80CFDB77-A46C-477F-85DC-B49C49455E51}</Project>
+      <Name>MonthUserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notepad_topMenu_UserControl\Notepad_topMenu_UserControl.csproj">
+      <Project>{D2B01669-5F3C-49F1-B3EA-5CE393AD3403}</Project>
+      <Name>Notepad_topMenu_UserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NotePad_UserControl\NotePad_UserControl.csproj">
+      <Project>{4E40C625-B7B6-4063-BA71-1A8A0C6F1A87}</Project>
+      <Name>NotePad_UserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegisterUserControl\RegisterUserControl.csproj">
+      <Project>{3AD12240-AA7B-4078-A343-06108783F6C5}</Project>
+      <Name>RegisterUserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Timetable_UserControl\Timetable_UserControl.csproj">
+      <Project>{957BB85B-8C12-4D98-AA65-23476AFBF201}</Project>
+      <Name>Timetable_UserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WalletTopMenuUserControll\WalletTopMenuUserControll%28M%29.csproj">
+      <Project>{9744C87C-8E0F-441F-B860-5530AA1AC3E4}</Project>
+      <Name>WalletTopMenuUserControll%28M%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeekUserControl\WeekUserControl.csproj">
+      <Project>{42FFA2E5-3990-4F8F-9396-59E3AA75889C}</Project>
+      <Name>WeekUserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinNote_LeftMenu\LeftMenu_UserControl.csproj">
+      <Project>{CB3EC1C4-084C-4138-A845-B61E66ED3B6F}</Project>
+      <Name>LeftMenu_UserControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Системные типы Microsoft® CLR для SQL Server® 2012 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Системные типы Microsoft® CLR для SQL Server® 2012 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoWinNote.ico" />
+    <None Include="Resources\Icon1.ico" />
+    <Resource Include="Images\calendar_blue.png" />
+    <Resource Include="Images\calendar_gray.png" />
+    <Resource Include="Images\notebook_blue.png" />
+    <Resource Include="Images\notebook_gray.png" />
+    <Resource Include="Images\wallet_blue.png" />
+    <Resource Include="Images\wallet_gray.png" />
+    <None Include="DesignFactory.WebMatrix.Executer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="logoWinNote.ico" />
+    <Resource Include="Media\crank-ring.mp3" />
+    <None Include="Media\crank-ring.wav" />
+    <None Include="Images\logoWinNote.ico" />
+    <Content Include="Model\Entity\DataBase\WinModel.edmx.sql" />
+    <Content Include="Model\Entity\DataBase\WinNote.mdf" />
+    <Content Include="Model\Entity\DataBase\WinNote_log.ldf">
+      <DependentUpon>WinNote.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\wallet_blue.png" />
+    <None Include="Resources\notebook_gray.png" />
+    <None Include="Resources\notebook_blue.png" />
+    <None Include="Resources\calendar_gray.png" />
+    <None Include="Resources\calendar_blue.png" />
+    <None Include="Resources\wallet_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Model\Entity\DataBase\WinNote.mdf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Model\Entity\DataBase\WinNote_log.ldf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

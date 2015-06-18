@@ -1,0 +1,120 @@
+﻿<UserControl x:Class="Notepad_topMenu_UserControl.Notepad_topMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="50"
+             d:DesignWidth="700"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Xaml/ButtonStyle_Dictionary.xaml" />
+                <ResourceDictionary Source="Xaml/ComboBoxStyle_Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <!--  строка 152 Notepad  -->
+    <Grid Name="MainGrid">
+        <Grid Name="Categories"
+              Height="50"
+              Margin="0"
+              Visibility="Visible">
+            <Button Name="Button_ChangeCategory"
+                    Width="175"
+                    Margin="30,0,0,0"
+                    Content="Изменить категорию"
+                    Style="{StaticResource Calendar_TopGrid_ButtonStyle}" />
+        </Grid>
+        <Grid Name="TextDocuments"
+              Height="50"
+              Margin="0,0,0,0"
+              Visibility="Hidden">
+            <Button Name="GoToCategoriesMenu"
+                    Width="150"
+                    Margin="30,0,0,0"
+                    Content="Вернуться"
+                    Style="{StaticResource Calendar_TopGrid_ButtonStyle}" />
+            <Button Name="Button_AddDocument"
+                    Width="175"
+                    Margin="230,0,0,0"
+                    Content="Добавить документ"
+                    Style="{StaticResource Calendar_TopGrid_ButtonStyle}" />
+            <Button Name="Button_ChangeDocument"
+                    Width="175"
+                    Margin="430,0,0,0"
+                    Content="Изменить документ"
+                    Style="{StaticResource Calendar_TopGrid_ButtonStyle}" />
+        </Grid>
+        <Grid Name="Notepad"
+              Height="50"
+              Margin="0,0,0,0"
+              Visibility="Hidden">
+            <Button Name="GoToTextDocumentsMenu"
+                    Width="170"
+                    MinWidth="170"
+                    Margin="30,0,0,0"
+                    Content="Вернуться"
+                    Style="{StaticResource Calendar_TopGrid_ButtonStyle}" />
+            <ComboBox Name="ComboBox_FontStyle"
+                      Width="150"
+                      Margin="140,0,0,0"
+                      Style="{StaticResource ComboBoxRoundedStyle}" />
+            <Label Margin="300,0,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="Шрифт" />
+            <ComboBox Name="ComboBox_FontSize"
+                      Width="60"
+                      Margin="360,0,0,0"
+                      Style="{StaticResource ComboBoxRoundedStyle}" />
+            <Label Margin="430,0,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="Размер" />
+            <Button Name="Button_Color"
+                    Width="50"
+                    Margin="500,0,0,0"
+                    Background="Black"
+                    Content="              "
+                    Style="{StaticResource CNotepad_TopGrid_ColorButtonStyle}" />
+            <Label Margin="550,0,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Content="Цвет" />
+            <Button Name="Button_BoldFontFamily"
+                    Width="20"
+                    Height="20"
+                    Margin="610,0,0,0"
+                    HorizontalAlignment="Left"
+                    Background="LightGray"
+                    Content="Ж"
+                    FontSize="13"
+                    TextBlock.FontWeight="Bold" />
+            <Button Name="Button_ItalicFontFamily"
+                    Width="20"
+                    Height="20"
+                    Margin="645,0,0,0"
+                    HorizontalAlignment="Left"
+                    Background="LightGray"
+                    Content="К"
+                    FontSize="13"
+                    TextBlock.FontWeight="Bold" />
+            <Button Name="Button_Underlining"
+                    Width="20"
+                    Height="20"
+                    Margin="680,0,0,0"
+                    HorizontalAlignment="Left"
+                    Background="LightGray"
+                    Content="П"
+                    FontSize="13"
+                    TextBlock.FontWeight="Bold" />
+        </Grid>
+    </Grid>
+</UserControl>
+
+
+<!--
+    xmlns:LoginUserControl="clr-namespace:LoginUserControl;assembly=LoginUserControl"
+-->
+

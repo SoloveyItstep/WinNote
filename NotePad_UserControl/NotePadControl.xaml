@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="NotePad_UserControl.NotePad_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+    <Grid>
+        <WrapPanel Name="MainWrapPanel"
+                   Opacity="1"
+                   Orientation="Horizontal"
+                   Visibility="Visible" />
+        <Grid Name="Grid_TextPanel"
+              Opacity="0"
+              Visibility="Hidden" />
+        <Grid Name="Grid_Textdocument"
+              Opacity="0"
+              Visibility="Hidden">
+            <RichTextBox Name="richTextBox" Margin="10" />
+        </Grid>
+    </Grid>
+
+</UserControl>

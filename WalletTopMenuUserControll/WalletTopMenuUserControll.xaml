@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="WalletTopMenuUserControll.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="50">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StyleDictionari.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Button1" Grid.Column="0" Style="{StaticResource MenuStyle}">
+            <Button.Content>
+                <WrapPanel Width="21" Height="21" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                    <Ellipse Width="5" Height="5" Margin="1,1,1,1" Fill="#29b6f6"></Ellipse>
+                </WrapPanel>
+            </Button.Content>
+        </Button>
+        <Button Grid.Column="1" Content="Доходы" Style="{StaticResource ButtonStyle}"></Button>
+        <Button Grid.Column="2" Content="Расходы" Style="{StaticResource ButtonStyle}"></Button>
+        <Button Grid.Column="3" Content="Отчеты" Style="{StaticResource ButtonStyle}"></Button>
+    </Grid>
+</UserControl>

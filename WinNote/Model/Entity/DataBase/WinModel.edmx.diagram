@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ed8a13f375fa4f4693cec2eb8d43ad46" Name="Diagram1">
+        <EntityTypeShape EntityType="WinDataModel.Users" Width="1.5" PointX="3.375" PointY="1.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.LogedInUser" Width="1.5" PointX="8.375" PointY="1.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.Calendar" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.CalendarEventsToLoadOnServer" Width="1.5" PointX="1.375" PointY="1.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.CalendarSharedEventAction" Width="1.5" PointX="4.375" PointY="0.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.NotepadCategories" Width="1.5" PointX="2.75" PointY="2.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.NotepadTextDocuments" Width="1.5" PointX="2.875" PointY="3.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.NotepadCategoryChanged" Width="1.5" PointX="5" PointY="1.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="WinDataModel.NotepadTextDocumentsChanged" Width="1.5" PointX="5.375" PointY="2.75" IsExpanded="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
